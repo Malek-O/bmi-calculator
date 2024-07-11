@@ -50,7 +50,7 @@ console.log(bmi);
                     {bmi ? <CalcualtedBMIText stats={bmi} option={selectedOption} /> :
                         <div>
                             <h1 className="text-lg md:text-[20px] my-2 text-white font-semibold">Welcome!</h1>
-                            <p className="text-white text-lg">Enter your height and weight and you’ll see your BMI result here</p>
+                            <p className="text-white text-[16px]">Enter your height and weight and you’ll see your BMI result here</p>
                         </div>
                     }
                 </div>

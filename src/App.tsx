@@ -1,17 +1,20 @@
 import logo from './assets/logo.svg'
 import Bmi from './Components/Bmi'
-function App() {
+import Hero from './Components/Hero'
+import { Limitation } from './Components/Limitation'
+import Tips from './Components/Tips'
 
+function App() {
   return (
     <div className='relative'>
-      <div className='-z-10 absolute w-full 2xl:w-[1200px] xl:w-[900px] h-[868px] rounded-b-[5rem] bg-gradient-to-l from-[#D6E6FE] to-[#d6fcfe00] mx-5'></div>
-      <section className="relative px-0 md:px-14 xl:px-28 pt-10 xl:pt-14">
+      <div className='-z-10 absolute w-full 2xl:w-[1200px] xl:w-[900px] h-[868px] rounded-b-[5rem] bg-gradient-to-l from-[#D6E6FE] to-[#d6fcfe00] '></div>
+      <section className="relative w-full  xl:max-w-[70rem] 2xl:max-w-[90rem] pt-10 mx-auto xl:pt-14">
 
         <header className='flex justify-center xl:justify-normal'>
           <img src={logo} alt="logo" />
         </header>
 
-        <main className='flex xl:flex-row flex-col justc my-28 '>
+        <main className='flex xl:flex-row flex-col justc my-14 xl:my-28 '>
           <div className='mx-2 sm:mx-0 xl:w-[560px] xl:text-left text-center '>
             <h1 className='text-[48px] sm:text-[64px] font-semibold  leading-[1.2] text-colors-gunmetal'>Body Mass</h1>
             <h1 className='text-[48px] sm:text-[64px] font-semibold  leading-[1.2] text-colors-gunmetal'>Index Calculator</h1>
@@ -19,10 +22,10 @@ function App() {
           </div>
           <Bmi />
         </main>
-
-        
       </section>
-
+      <Hero/>
+      <Tips/>
+      <Limitation/>
     </div>
   )
 }
